@@ -2,19 +2,27 @@
 name: "AWS SQS"
 about: Criar um repositório novo com a estrutura básica do Terraform para um AWS SQS
 title: "[TERRAFORM][SQS] Solicitação de repositório"
-labels: ["sqs", "terraform", "infra"]
+labels: ["terraform", "infra", "sqs"]
 assignees: ''
 ---
 
-### 🏗️ Informações obrigatórias
+## 🧩 Informações para criação do repositório
 
-**Nome da empresa:**  
-`Preencha aqui`
+**👉 Por favor, preencha os campos abaixo:**
 
-**Sigla da squad (2 letras):**  
-`Preencha aqui`
+- **Nome da empresa:**  
+  <!-- Ex: acme -->
 
-**Nome do projeto:**  
-`Preencha aqui`
+- **Sigla da squad (2 letras):**  
+  <!-- Ex: dp -->
 
-> Após preencher os dados acima, clique em "Submit new issue". O repositório será criado automaticamente com base nas informações fornecidas.
+- **Nome do projeto:**  
+  <!-- Ex: fila-processamento-notas -->
+
+> Após preencher os campos acima, clique em **"Submit new issue"**.
+
+---
+
+O repositório será criado automaticamente com base nos dados fornecidos, seguindo o padrão:
+
+**`empresa-sigla-projeto`**
