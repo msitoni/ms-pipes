@@ -1,0 +1,28 @@
+name: Criar repositório a partir de issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  criar-repo:
+    if: contains(github.event.issue.title, '[TERRAFORM][SQS]')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extrair dados da issue
+        id: extract
+        run: |
+          BODY="${{ github.event.issue.body }}"
+          COMPANY=$(echo "$BODY" | grep -i 'Nome da empresa:' -A 1 | tail -n1 | xargs)
+          SQUAD=$(echo "$BODY" | grep -i 'Sigla da squad' -A 1 | tail -n1 | xargs)
+          PROJECT=$(echo "$BODY" | grep -i 'Nome do projeto:' -A 1 | tail -n1 | xargs)
+          REPO_NAME="${COMPANY}-${SQUAD}-${PROJECT}"
+          echo "repo_name=$REPO_NAME" >> $GITHUB_OUTPUT
+
+      - name: Criar repositório via API
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh repo create ${{ steps.extract.outputs.repo_name }} --private --confirm \
+            --description "Infraestrutura SQS para o projeto ${{ steps.extract.outputs.repo_name }}" \
+            --enable-issues
