@@ -6,23 +6,39 @@ labels: ["terraform", "sqs", "infra"]
 assignees: ''
 ---
 
-### 🎯 Objetivo
+## 🏗️ Informações do projeto
 
-Criar um novo repositório com estrutura inicial para gerenciar filas SQS usando Terraform.
+Por favor, preencha os campos abaixo antes de clicar em "Submit new issue":
+
+- **Nome da empresa**:  
+  `<!-- Ex: Acme Corp -->`
+
+- **Sigla da squad (2 letras)**:  
+  `<!-- Ex: DP -->`
+
+- **Nome do projeto**:  
+  `<!-- Ex: fila-processamento-notas -->`
 
 ---
 
-### 🧩 Estrutura esperada
+## 📦 Estrutura a ser gerada
 
-- Fila principal (standard ou FIFO)
+> Repositório baseado em Terraform com:
+- Fila padrão SQS
 - DLQ (Dead Letter Queue)
 - Políticas de acesso
-- Tags e naming conventions
+- Tags padrão da empresa
 
 ---
 
-### 🧪 Critérios de aceitação
+## ✅ Critérios de aceitação
 
-- [ ] Repositório criado com layout padrão
-- [ ] Módulos Terraform configurados
-- [ ] Documentação inicial no README
+- [ ] Repositório criado com layout e naming padrão
+- [ ] Módulos Terraform implementados
+- [ ] Documentação inicial pronta
+
+---
+
+## ▶️ Após preencher, clique abaixo para continuar:
+
+➡️ Clique em **"Submit new issue"** no topo para enviar esta solicitação.
