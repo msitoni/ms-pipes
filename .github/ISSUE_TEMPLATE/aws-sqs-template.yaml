@@ -7,7 +7,6 @@ body:
   - type: markdown
     attributes:
       value: "Formulário padrão para criação de repositório no GitHub"
-  
   - type: input
     id: acronym
     attributes:
