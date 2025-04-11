@@ -29,8 +29,6 @@ body:
       label: ">>Privacidade<<"
       description: Este repositório deve ser privado ou interno?
       options:
-        - private
-        - internal
     validations:
       required: true
   - type: dropdown
