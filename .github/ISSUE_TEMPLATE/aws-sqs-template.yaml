@@ -6,7 +6,7 @@ assignees: "teste"
 body:
   - type: markdown
     attributes:
-      value: |
+      value: 
         Formulário padrão para criação de repositório no GitHub Itaú Corp
   
   - type: input
