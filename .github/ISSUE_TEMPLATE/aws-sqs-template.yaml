@@ -2,8 +2,7 @@ name: "[Cloud Pública] Criação de repositório"
 description: Criação de repositório para deploy na Cloud Pública (AWS)
 title: "Criação de repositório para Cloud Pública"
 labels: ["repositorio", "cloud-publica"]
-assignees:
-  - ${{github.author}}
+assignees: "teste"
 body:
   - type: markdown
     attributes:
