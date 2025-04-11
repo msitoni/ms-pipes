@@ -3,7 +3,7 @@ description: "Criação de repositório baseado em Terraform com SQS"
 title: "[TERRAFORM][SQS] Solicitação de repositório"
 labels: ["terraform", "sqs", "infra"]
 assignees:
-  - ${{github.author}}
+  - ${{ github.author }}
 body:
   - type: markdown
     attributes:
