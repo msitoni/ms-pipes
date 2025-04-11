@@ -53,8 +53,6 @@ body:
       label: ">>Criar SiglaApp<<"
       description: Gostaria de criar agora a SiglaApp para o repositório?
       options:
-        - Não
-        - Sim
     validations:
       required: true
   - type: input
