@@ -2,32 +2,86 @@ name: "AWS ECS"
 description: "Criação de repositório baseado em Terraform com ECS"
 title: "[TERRAFORM][ECS] Solicitação de repositório"
 labels: ["terraform", "ecs", "infra"]
+assignees:
+  - ${{ github.author }}
 body:
   - type: markdown
     attributes:
       value: |
-        Preencha os campos abaixo para solicitar criação de repositório ECS com Terraform.
+        Preencha os campos abaixo para solicitar criação de repositório SQS com Terraform.
 
   - type: input
-    id: company
+    id: acronym
     attributes:
-      label: "Nome da empresa"
-      placeholder: "Ex: acme"
+      label: "-->Sigla do produto<--"
+      description: Sigla do produto
+      placeholder: SIP
     validations:
       required: true
 
   - type: input
-    id: squad
+    id: name
     attributes:
-      label: "Sigla da squad (2 letras)"
-      placeholder: "Ex: dp"
+      label: "-->Nome da aplicação<--"
+      description: Nome da aplicação ou serviço
+      placeholder: nomedaminhaaplicacao
     validations:
       required: true
 
-  - type: input
-    id: project
+  - type: dropdown
+    id: privacy
     attributes:
-      label: "Nome do projeto"
-      placeholder: "Ex: processamento-pedidos"
+      label: "-->Privacidade<--"
+      description: Este repositório deve ser privado ou interno?
+      options:
+        - private
+        - internal
+    validations:
+      required: true
+
+  - type: dropdown
+    id: template
+    attributes:
+      label: "-->Template<--"
+      description: Este repositório é para qual recurso? Obs.(O template itau-up2-template-infra-terraform está disponível na jornada [Cloud Pública] Criação de repositório de infra na tela anterior)
+      options:
+        - empresa-xxx-template-dotnet-core-ec2
+        - empresa-xxx-template-dotnet-core-lambda
+        - empresa-xxx-template-dotnet-core-eks
+        - empresa-xxx-template-go-lambda
+        - empresa-xxx-template-go-eks
+        - empresa-xxx-template-go-ecs
+        - empresa-xxx-template-java-gradle-ecs 
+        - empresa-xxx-template-java-gradle-eks
+        - empresa-xxx-template-java-maven-ec2
+        - empresa-xxx-template-java-maven-ecs
+        - empresa-xxx-template-java-maven-lambda
+        - empresa-xxx-template-java-maven-eks
+        - empresa-xxx-template-nodejs-ecs
+        - empresa-xxx-template-nodejs-lambda
+        - empresa-xxx-template-python-lambda
+        - empresa-xxx-template-python-eks
+        - empresa-xxx-template-python-ecs
+        - empresa-xxx-template-python-containerlambda
+    validations:
+      required: true
+  
+  - type: input
+    id: conta_aws
+    attributes:
+      label: "-->Nome Conta AWS<--"
+      description: Nome da Conta AWS
+      placeholder: nomedaminhaconta
+    validations:
+      required: true  
+  
+  - type: dropdown
+    id: create_sigla_app
+    attributes:
+      label: "-->Criar SiglaApp<--"
+      description: Gostaria de criar agora a SiglaApp para o repositório?
+      options:
+        - Não
+        - Sim
     validations:
       required: true
