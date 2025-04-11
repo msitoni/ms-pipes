@@ -1,33 +1,33 @@
 name: "AWS SQS"
-description: Criação de repositório baseado em Terraform com SQS
+description: "Criação de repositório baseado em Terraform com SQS"
 title: "[TERRAFORM][SQS] Solicitação de repositório"
 labels: ["terraform", "sqs", "infra"]
 body:
   - type: markdown
     attributes:
       value: |
-        Preencha os campos abaixo para solicitar criação de repositório SQS com Terraform:
+        Preencha os campos abaixo para solicitar criação de repositório SQS com Terraform.
 
   - type: input
     id: company
     attributes:
-      label: Nome da empresa
-      placeholder: Ex: acme
+      label: "Nome da empresa"
+      placeholder: "Ex: acme"
     validations:
       required: true
 
   - type: input
     id: squad
     attributes:
-      label: Sigla da squad (2 letras)
-      placeholder: Ex: dp
+      label: "Sigla da squad (2 letras)"
+      placeholder: "Ex: dp"
     validations:
       required: true
 
   - type: input
     id: project
     attributes:
-      label: Nome do projeto
-      placeholder: Ex: fila-pagamentos
+      label: "Nome do projeto"
+      placeholder: "Ex: fila-pagamentos"
     validations:
       required: true

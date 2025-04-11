@@ -1,33 +1,33 @@
 name: "AWS ECS"
-description: Criação de repositório baseado em Terraform com ECS
+description: "Criação de repositório baseado em Terraform com ECS"
 title: "[TERRAFORM][ECS] Solicitação de repositório"
 labels: ["terraform", "ecs", "infra"]
 body:
   - type: markdown
     attributes:
       value: |
-        Preencha os campos abaixo para solicitar criação de repositório ECS com Terraform:
+        Preencha os campos abaixo para solicitar criação de repositório ECS com Terraform.
 
   - type: input
     id: company
     attributes:
-      label: Nome da empresa
-      placeholder: Ex: acme
+      label: "Nome da empresa"
+      placeholder: "Ex: acme"
     validations:
       required: true
 
   - type: input
     id: squad
     attributes:
-      label: Sigla da squad (2 letras)
-      placeholder: Ex: dp
+      label: "Sigla da squad (2 letras)"
+      placeholder: "Ex: dp"
     validations:
       required: true
 
   - type: input
     id: project
     attributes:
-      label: Nome do projeto
-      placeholder: Ex: processamento-pedidos
+      label: "Nome do projeto"
+      placeholder: "Ex: processamento-pedidos"
     validations:
       required: true
