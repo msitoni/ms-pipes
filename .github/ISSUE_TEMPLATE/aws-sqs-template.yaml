@@ -15,7 +15,6 @@ body:
       placeholder: IU2
     validations:
       required: true
-      
   - type: input
     id: name
     attributes:
@@ -24,7 +23,6 @@ body:
       placeholder: nomedaminhaaplicacao
     validations:
       required: true
-
   - type: dropdown
     id: privacy
     attributes:
@@ -35,7 +33,6 @@ body:
         - internal
     validations:
       required: true
-
   - type: dropdown
     id: template
     attributes:
@@ -69,10 +66,8 @@ body:
         - itau-up2-template-python-ecs
         - itau-up2-template-python-containerlambda
         - itau-up2-template-image-container-ecs-deploy
-
     validations:
       required: true
-  
   - type: input
     id: conta_aws
     attributes:
@@ -81,7 +76,6 @@ body:
       placeholder: nomedaminhaconta
     validations:
       required: true
-
   - type: dropdown
     id: create_sigla_app
     attributes:
@@ -92,7 +86,6 @@ body:
         - Sim
     validations:
       required: true
-
   - type: input
     id: application_service_id
     attributes:
