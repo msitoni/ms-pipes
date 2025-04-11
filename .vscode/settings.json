@@ -1,0 +1,6 @@
+{
+ "yaml.schemas": {
+  "file:///c%3A/Users/msito/.vscode/extensions/atlassian.atlascode-3.4.24/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml",
+  "https://json.schemastore.org/github-issue-forms.json": "file:///d%3A/Projetos/ms-pipes/.github/ISSUE_TEMPLATE/config.yml"
+ }
+}
