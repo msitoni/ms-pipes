@@ -37,33 +37,6 @@ body:
       label: ">>Template<<"
       description: Este repositório é para qual recurso? Obs.(O template itau-up2-template-infra-terraform está disponível na jornada [Cloud Pública] Criação de repositório de infra na tela anterior)
       options:
-        - itau-up2-template-dotnet-core-ec2
-        - itau-up2-template-dotnet-core-ecs
-        - itau-up2-template-dotnet-core-lambda
-        - itau-up2-template-dotnet-core-eks
-        - itau-up2-template-dotnet-core-containerlambda
-        - itau-up2-template-dotnet-framework-ec2
-        - itau-up2-template-go-lambda
-        - itau-up2-template-go-eks
-        - itau-up2-template-go-ecs
-        - itau-up2-template-java-gradle-ecs
-        - itau-up2-template-java-gradle-eks
-        - itau-up2-template-java-maven-ec2
-        - itau-up2-template-java-maven-ecs
-        - itau-up2-template-java-maven-lambda
-        - itau-up2-template-java-maven-eks
-        - itau-up2-template-nodejs-ecs
-        - itau-up2-template-nodejs-lambda
-        - itau-up2-template-nodejs-s3
-        - itau-up2-template-nodejs-eks
-        - itau-up2-template-nonbuildable-ec2
-        - itau-up2-template-nonbuildable-eks
-        - itau-up2-template-nonbuildable-s3
-        - itau-up2-template-python-lambda
-        - itau-up2-template-python-eks
-        - itau-up2-template-python-ecs
-        - itau-up2-template-python-containerlambda
-        - itau-up2-template-image-container-ecs-deploy
     validations:
       required: true
   - type: input
